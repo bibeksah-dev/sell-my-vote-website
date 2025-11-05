@@ -12,6 +12,7 @@ import { ComparisonStats } from "@/components/gamification/comparison-stats"
 import { ImpactVisualization } from "@/components/gamification/impact-visualization"
 import { SocialChallenge } from "@/components/gamification/social-challenge"
 import { ShareCardGenerator } from "@/components/results/share-card-generator"
+import SellMyVoteButton from "@/components/results/sell-my-vote-button"
 import type { CalculationResult } from "@/types/survey"
 
 export default function ResultsPage() {
@@ -131,6 +132,7 @@ export default function ResultsPage() {
 
         {/* Total Cost */}
         <TotalCostCard totalCost={result.totalCost} />
+        <SellMyVoteButton />
 
         {/* Badges */}
         <BadgeDisplay badges={badges} />

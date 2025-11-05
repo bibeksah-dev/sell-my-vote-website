@@ -41,7 +41,7 @@ export default function EvaluatePage() {
         {
           id: "track-4",
           text: "Look for concrete achievements and measurable outcomes",
-          textNp: "ठोस उपलब्धिहरू र मापनयोग्य परिणामहरू खोज्नुहोस्",
+          textNp: "ठोस उपलब्धिहरू र मापनयोग्य परिणामहरू खोज्नु���ोस्",
         },
       ],
     },

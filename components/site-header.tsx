@@ -6,7 +6,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 import { useLanguage } from "@/lib/language-context"
 import Image from "next/image"
 import Link from "next/link"
-import { ExternalLink, Menu, Home, Calculator, ClipboardCheck } from "lucide-react"
+import { ExternalLink, Menu, ClipboardCheck, BarChart3, Info } from "lucide-react"
 import { useState } from "react"
 
 export function SiteHeader() {
@@ -18,6 +18,16 @@ export function SiteHeader() {
       href: "/evaluate",
       label: t("Evaluate Candidates", "उम्मेदवारहरू मूल्याङ्कन गर्नुहोस्"),
       icon: <ClipboardCheck className="w-4 h-4" />,
+    },
+    {
+      href: "/results",
+      label: t("View Results", "परिणामहरू हेर्नुहोस्"),
+      icon: <BarChart3 className="w-4 h-4" />,
+    },
+    {
+      href: "/about",
+      label: t("About", "बारेमा"),
+      icon: <Info className="w-4 h-4" />,
     },
   ]
 
